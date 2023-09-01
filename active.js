@@ -5,4 +5,4 @@ switch(window.location.pathname.split(".")[0].slice(1)){
     case "Blogs":
         page = "Blogs"; break;
 }
-console.log(page);
+console.log("hello"+page);
