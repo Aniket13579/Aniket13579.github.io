@@ -42,6 +42,16 @@
             color: #000;
         }
 
+        .click-here{
+            width: 50%;
+            height:20%;
+        }
+
+        .anicoin-img{
+            width: 100%;
+            height:100%;
+        }
+
     </style>
     <body >
         <div class="container-sm p-3 my-4 rounded info" id="info">
@@ -63,6 +73,8 @@
                 <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
                   <div class="accordion-body">
                     <article class="articles">
+                        Identifying brands displayed on the ad board over time. This will help to measure the
+                        effectiveness of sponsorship strategies like the total number of occurrences of a brand. 
                     </article>
                   </div>
                 </div>
@@ -81,6 +93,8 @@
                 <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
                   <div class="accordion-body">
                     <article>
+                        Anonymization of sporting events to stop unfair judgements and stereotypes based on
+                        players appearance, gender, time, popularity, etc. that can be seen in videos.
                     </article>
                   </div>
                 </div>
@@ -99,6 +113,9 @@
                 <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
                   <div class="accordion-body">
                     <article>
+                        Implemented the machine learning model for car damage type classification,
+                severity classification and for damage location detection using annotation bounding boxes.<br>
+                Models were further tuned and optimized to lower the latency.
                     </article>
                   </div>
                 </div>
@@ -117,13 +134,35 @@
                 <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
                   <div class="accordion-body">
                     <article>
+                        Online tutoring web application that allows students to learn courses which
+                        are uploaded by teachers having video lectures and coding snippets verified by admins. 
+                        <br><b>Functionalities for Students:</b><br>
+                        1) AI Search filter<br>
+                        2) Chatbot for instant query resolution and website guidance<br>
+                        3) Course Dynamic Pricing<br>
+                        4) Custom IDE supporting languages like Java,Python,C++<br>
+                        5) Try it now, to paste course code directly on IDE<br>
+                        6) Certification on Completion<br>
+                        7) Competitive Coding Playground to test students skills where students code will get tested on hidden test cases created by course teacher.
+                        8) Recommendation of Courses by searches<br>
+                        9) Support of Paypal SDK for In-portal payment process.
+                        <br><b>Functionalities for Teachers:</b><br>
+                        1) Course creation by adding contents, videos and using IDE for codes snippets<br>
+                        2) Resolve Queries of Students for courses<br>
+                        3) Coding Playground Question and test cases creation<br>
+                        4) Teacher Performance dashboard<br>
+                        5) Tracking of profit earned from courses<br>
+                        <br><b>Functionalities for Admins:</b><br>
+                        1) Verify course created by teachers before displaying to students<br>
+                        2) Track profit earned from website improvement charges applied on each course<br>
+                        3) Check All Teacher performance
                     </article>
                   </div>
                 </div>
               </div>
         </div>
         <div class="container-sm p-3 my-4 border rounded-end rounded-bottom border-bottom border-primary cards" id="text_sum">
-            <img src="./images/click_here.png" />
+            <img src="./images/click_here (2).png" class="click-here" type="button" data-bs-toggle="modal" data-bs-target="#moal-ss"/>
             <h5 class="about-img">Anichain: Secure wallet for Anicoin a crypto currency</h5></a>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="details">
@@ -134,29 +173,27 @@
                 <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
                   <div class="accordion-body">
                     <article>
+                        Anicoin a custom cryptocurency which allows user to use it and trade with. 
+                        Users can perform buy and sell process without revealing identity as it is hidden by encrypted address.
+
                     </article>
                   </div>
                 </div>
               </div>
+              <div class="modal fade" id="moal-ss" tabindex="-1" aria-labelledby="moal-ssLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl  modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="moal-ssLabel">Project Screenshot</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                             <img src="./images/anicoin.png" class="anicoin-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div></a>
-        <hr>
-        <h5 style="text-align: center;"><span>Other Articles:</span></h5>
-        <div class="container-sm p-1 my-2 border rounded-end rounded-bottom border-bottom border-primary cards others" id="others-articles">
-            <h5 class="about-img">
-                <a class="downside" href="https://projectgurukul.org/pneumonia-detection-deep-learning/">Pneumonia Detection using Deep Learning</a><br></h5>
-        </div>
-        <div class="container-sm p-1 my-3 border rounded-end rounded-bottom border-bottom border-primary cards others" id="others-articles">
-            <h5 class="about-img">
-                <a class="downside" href="https://projectgurukul.org/detect-parkinsons-disease/">Parkinson Disease Detection using deep learning</a><br>
-        </div>
-        <div class="container-sm p-1 my-3 border rounded-end rounded-bottom border-bottom border-primary cards others" id="others-articles">
-            <h5 class="about-img">
-                <a class="downside" href="https://projectgurukul.org/spam-filtering-machine-learning/">Spam Filtering using machine learning</a><br> 
-        </div>
-        <div class="container-sm p-1 my-3 border rounded-end rounded-bottom border-bottom border-primary cards others" id="others-articles">
-            <h5 class="about-img">
-                <a class="downside" href="https://data-flair.training/blogs/language-translation-machine-learning/">Language Translator using machine learning</a></h5>
-        </div>
     </div>
     <script src="./active.js"></script>
     <script src="./navbar.js"></script>
