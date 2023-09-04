@@ -11,6 +11,12 @@ $('body').prepend('<div id="include">Loading..</div>');
 })();
 
 setTimeout(()=>{
-    document.getElementById(page).style.textDecoration = "underline";
+    active = document.getElementById(page);
+    active.style.textDecoration = "underline";
+    active.style.textDecorationColor = "#fff";
+    active.style.textDecorationThickness = "2px";
+    active.style.textUnderlineOffset = "8px";
+    active.style.fontWeight = "500";
+
   },1000);
 
