@@ -9,32 +9,127 @@
     </head>
     <style>
 
+      .intro{
+        color: #000;
+        font-size: 28px;
+        text-align: center;
+        font-weight: 800;;
+      }
+
+  .info-my{
+    float: left;
+    width: 50%;
+  }
+
+  .my-details{
+      text-align: justify;
+      margin-left: 5%;
+      width: 100%;
+  }  
+
+  .keywords{
+    font-weight: bold;
+  }
+  
+  .neurals{
+    float: right;
+    width: 50%;
+  }
+
+  .neurals-img{
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+
+  .cv{
+    margin-left: 5%;
+  }
+
+  .all-text{
+    border-left: 3px solid blue;
+  }
+  .shift{
+    margin-left: 2%;
+  }
+  .overall{
+    margin-top: 5%;
+  }
+
+  @media (max-width:992px){
+    .my-details{
+      margin-left: 5%;
+      width: 100%;
+  }
+
+  .info-my{
+    width: 100%;
+
+  }
+
+  .neurals,.neurals-img{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: inherit;
+  }
+  }
+
+  @media (max-width:575px){
+    .my-details{
+      margin-left: -1%;
+      width: 100%;
+  }
+
+  .info-my{
+    width: 100%;
+
+  }
+
+  .neurals,.neurals-img{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: inherit;
+  }
+  }
+  
     </style>
+  </head>
+  <body>
+
     <body>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="about-me">
-                    Hey I am a machine Learning Engineer
-                </div>
-              </div>
-              <div class="col">
-                2 of 2
-              </div>
+    <div class="overall">
+      <div class="container-sm p-3 my-2 rounded my-details">
+        <div class="info-my"><span style="font-weight: normal;color: #000;font-size: 17px;line-height: 20px;">
+            <h3 class="intro">Hello, I'm Aniket Chaudhary</h3><br> 
+            <div class="all-text">
+              <div class="shift">
+                I am <span class="keywords">Machine learning engineer</span> with also strong base in web development. 
+                My primary expertise lies in machine learning, where I have grind my skills in diverse domains including 
+                <span class="keywords">Natural Language Processing (NLP), Computer Vision, Tabular Data </span>etc. 
+                Currently, I am working as <span class="keywords">Machine Learning intern at Quantiphi</span>, 
+                where I continue to expand my knowledge and contribute to cutting-edge projects in the field. 
+                My passion for mathematics and data science drives my pursuit of excellence in the world of machine learning.
             </div>
-            <div class="row">
-              <div class="col">
-                1 of 3
-              </div>
-              <div class="col">
-                2 of 3
-              </div>
-              <div class="col">
-                3 of 3
-              </div>
-            </div>
-          </div>
-          <script src="./active.js"></script>
-          <script src="./navbar.js"></script>
+          </div><br>
+            I have worked on projects with various use-cases which includes: <br>
+            <span class="keywords"><br>1) Computer Vision:</span><br>
+            <div class="cv">
+            i) Image Segmentation : U2Net, UNet etc<br>
+            ii) Pose Estimation : Openpose<br>
+            iii) Homography estimation : Superpoint Superglue<br>
+            iv) Image Similarity : Dinov2, Imagebind, Clip etc<br>
+            v) Classification & Detection : ResNet, EffiecientDet, Yolo etc<br>
+            </div><br>
+            <span class="keywords">2) Sequence to Sequence Modelling:</span> LSTM, RNN, Transformer, T5 etc<br>       
+            <span class="keywords">3) Time forecasting:</span> LSTM, RNN, VAE etc<br>
+            <span class="keywords">4) Frame Tagging:</span> Labelme
+        </span>
+      </div>
+        <div class="container-sm p-3 my-2 rounded neurals">
+            <img src="./images/neural_net_port_skills.png" class="neurals-img">
+        </div>
+      </div>
+    </div>
+        <script src="./active.js"></script>
+        <script src="./navbar.js"></script>
     </body>
 </html>
