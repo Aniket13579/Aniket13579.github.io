@@ -11,54 +11,187 @@
     </head>
     <style>
         img{
-            width: 100%;
-            height: 50%;
+            width: 80%;
+            height: 30%;
         }
+        .cards,.info{
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            border-bottom: #000;
+        }
+        .cards{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .keywords{
+            color: rgb(220, 190, 20);
+            font-weight: bold;
+        }
+        .syntax{
+            color: aqua;
+        }
+
+        article{
+            text-align: left;
+        }
+
+        .accordion-button,.others{
+            background-color: #0002;
+        }
+
+        .downside{
+            color: #000;
+        }
+
     </style>
     <body >
-        <a href="https://techvidvan.com/tutorials/twitter-hashtag-prediction-machine-learning/" target="_blank">
-        <div class="container-sm p-5 my-5 border" id="hashtag">
+        <div class="container-sm p-3 my-4 rounded info" id="info" style="background-color: #000">
+            <code><span style="font-weight: normal;color: #fff;word-spacing: 0%;font-size: 17px;line-height: 20px;">
+                <b class="syntax">>>> model.summarize</b>('''<br><br>Below are my published articles during my internship. 
+                This articles belongs to the field of <span class="keywords">Machine learning and Deep learning.</span>
+                In the domains like <span class="keywords">NLP, Computer Vision etc.</span>
+                This articles are referred by many peoples for their learnings and academic projects.
+                All articles are published in the year <span class="keywords">2021.</span><br><br>''')<br><br>
+                <b class="syntax">>>> summary:</b> "I hope you will like it and give some valuable feedback&#128578;"
+            </span></code>
+        </div>
+    <div id="cards" class="accordion">
+        <div class="container-sm p-3 my-4 border rounded-end rounded-bottom border-bottom border-primary cards" id="hashtag">
+            <a href="https://techvidvan.com/tutorials/twitter-hashtag-prediction-machine-learning/" target="_blank">
             <img src="./images/twitter_hashtag.png" />
-            <h5>Twitter hashtag prediction</h5>
-        </div></a>
-        <a href="https://techvidvan.com/tutorials/chatbot-project-python-ai/" target="_blank">
-        <div class="container-sm p-5 my-5 border" id="chatbot">
+            <h5 class="about-img">Twitter hashtag prediction using Deep Learning</h5></a>
+            <hr>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="details">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    <h5><b>Description of this project</b></h5>
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
+                  <div class="accordion-body">
+                    <article class="articles">
+                        <b>Description:</b><br>
+                        Building and Inferencing Machine Learning model that will analyze tweets about the weather forecast and 
+                        then predict all of the hashtags associated with those tweets.<br>
+                        <hr>
+                        <b>Dataset: </b><a href="https://www.kaggle.com/c/crowdflower-weather-twitter/data">Kaggle: Crowdflower Weather Twitter</a>
+                    </article>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="container-sm p-3 my-4 border rounded-end rounded-bottom border-bottom border-primary cards" id="chatbot">
+            <a href="https://techvidvan.com/tutorials/chatbot-project-python-ai/" target="_blank">
             <img src="./images/chatbot.png" />
-            <h5>Contextual Chatbot</h5>
-        </div></a>
-        <a href="https://data-flair.training/blogs/automatic-music-generation-lstm-deep-learning/" target="_blank">
-        <div class="container-sm p-5 my-5 border" id="music_gen">
+            <h5 class="about-img">Contextual Chatbot using Deep learning from scratch</h5></a>
+            <hr>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="details">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    <h5><b>Description of this project</b></h5>
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
+                  <div class="accordion-body">
+                    <article>
+                        <b>Description:</b><br>
+                        AI-based contextual chatbot that will maintain the context or in which sense or proportion the user is asking a query. 
+                        The user's query will be mapped to the intent with highest probabilitys, which will maintain context and then return a 
+                        random response.
+                    </article>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="container-sm p-3 my-4 border rounded-end rounded-bottom border-bottom border-primary cards" id="music_gen">
+            <a href="https://data-flair.training/blogs/automatic-music-generation-lstm-deep-learning/" target="_blank">
             <img src="./images/automatic_music.png" />
-            <h5>Automatic Music Generation</h5>
+            <h5 class="about-img">Automatic Music Generation using Deep learning</h5></a>
+            <hr>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="details">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    <h5><b>Description of this project</b></h5>
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
+                  <div class="accordion-body">
+                    <article>
+                        <b>Description:</b><br>
+                        Building an Automatic Music Generation model using LSTM. Fetched notes from all music files will be fed into the model 
+                        for prediction. Then creating a MIDI file using these predicted notes.<br>
+                        <b>Dataset: </b><a href="https://www.kaggle.com/datasets/soumikrakshit/classical-music-midi">Kaggle: Classical Music Midi</a>
+                    </article>
+                  </div>
+                </div>
+              </div>
         </div></a>
-        <a href="https://techvidvan.com/tutorials/dog-breed-classification/" target="_blank">
-        <div class="container-sm p-5 my-5 border" id="dog_breed">
+        <div class="container-sm p-3 my-4 border rounded-end rounded-bottom border-bottom border-primary cards" id="dog_breed">
+            <a href="https://techvidvan.com/tutorials/dog-breed-classification/" target="_blank">
             <img src="./images/dog_breed.png" />
-            <h5>Dog Breed Classification</h5>
+            <h5 class="about-img">Dog Breed Classification using Deep Learning</h5></a>
+            <hr>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="details">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    <h5><b>Description of this project</b></h5>
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
+                  <div class="accordion-body">
+                    <article>
+                        <b>Description:</b><br>
+                        Building and Inferencing machine learning model for dog's breed identification.<br>
+                        <b>Dataset: </b><a href="https://www.kaggle.com/c/dog-breed-identification">Kaggle: Dog Breed Identification</a>
+                    </article>
+                  </div>
+                </div>
+              </div>
         </div></a>
-        <a href="https://data-flair.training/blogs/machine-learning-text-summarization/" target="_blank">
-        <div class="container-sm p-5 my-5 border" id="text_sum">
+        <div class="container-sm p-3 my-4 border rounded-end rounded-bottom border-bottom border-primary cards" id="text_sum">
+            <a href="https://data-flair.training/blogs/machine-learning-text-summarization/" target="_blank">
             <img src="./images/text_summarizer.png" />
-            <h5>Text Summarization</h5>
+            <h5 class="about-img">Text Summarization using Deep Learning</h5></a>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="details">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    <h5><b>Description of this project</b></h5>
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="details" data-bs-parent="#details-all">
+                  <div class="accordion-body">
+                    <article>
+                        <b>Description:</b><br>
+                        Building and Inferencing Machine Learning model that will analyze tweets about the weather forecast and 
+                        then predict all of the hashtags associated with those tweets.<br>
+                        <b>Dataset: </b><a href="https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews">Kaggle: Amazon Fine Food Reviews</a>
+                    </article>
+                  </div>
+                </div>
+              </div>
         </div></a>
-    
-        <script src="./active.js"></script>
-        <script src="./navbar.js"></script>
+        <hr>
+        <h5 style="text-align: center;"><span>Other Articles:</span></h5>
+        <div class="container-sm p-1 my-2 border rounded-end rounded-bottom border-bottom border-primary cards others" id="others-articles">
+            <h5 class="about-img">
+                <a class="downside" href="https://projectgurukul.org/pneumonia-detection-deep-learning/">Pneumonia Detection using Deep Learning</a><br></h5>
+        </div>
+        <div class="container-sm p-1 my-3 border rounded-end rounded-bottom border-bottom border-primary cards others" id="others-articles">
+            <h5 class="about-img">
+                <a class="downside" href="https://projectgurukul.org/detect-parkinsons-disease/">Parkinson Disease Detection using deep learning</a><br>
+        </div>
+        <div class="container-sm p-1 my-3 border rounded-end rounded-bottom border-bottom border-primary cards others" id="others-articles">
+            <h5 class="about-img">
+                <a class="downside" href="https://projectgurukul.org/spam-filtering-machine-learning/">Spam Filtering using machine learning</a><br> 
+        </div>
+        <div class="container-sm p-1 my-3 border rounded-end rounded-bottom border-bottom border-primary cards others" id="others-articles">
+            <h5 class="about-img">
+                <a class="downside" href="https://data-flair.training/blogs/language-translation-machine-learning/">Language Translator using machine learning</a></h5>
+        </div>
+    </div>
+    <script src="./active.js"></script>
+    <script src="./navbar.js"></script>
     </body>
 </html>
-
-<!-- 
-*Twitter Hashtag Prd:
-https://techvidvan.com/tutorials/twitter-hashtag-prediction-machine-learning/
-*Contextual Chatbot:
-https://techvidvan.com/tutorials/chatbot-project-python-ai/  
-*Automatic Music Generation:
-https://data-flair.training/blogs/automatic-music-generation-lstm-deep-learning/
-Pneumonia:
-https://projectgurukul.org/pneumonia-detection-deep-learning/ 
-Parkinson: https://projectgurukul.org/detect-parkinsons-disease/
-Spam: https://projectgurukul.org/spam-filtering-machine-learning/
-Language Trans: https://data-flair.training/blogs/language-translation-machine-learning/
-*Dog Breed: https://techvidvan.com/tutorials/dog-breed-classification/
-*Text Sum: https://data-flair.training/blogs/machine-learning-text-summarization/ 
--->
