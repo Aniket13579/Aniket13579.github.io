@@ -1,8 +1,7 @@
 var page;
 switch(window.location.pathname.split(".")[0].slice(1)){
-    case "":
+    case "Portfolio_Aniket":
         page = "Home"; break;
     case "Blogs":
         page = "Blogs"; break;
 }
-console.log("hello"+page);
