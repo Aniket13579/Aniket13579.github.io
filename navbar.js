@@ -1,4 +1,5 @@
 $('body').prepend('<div id="include">Loading..</div>');
+$('body').append("<script src='./active.js'></script>");
 
 (() => {
     includes = document.getElementById('include');
@@ -19,4 +20,3 @@ setTimeout(()=>{
     active.style.fontWeight = "500";
 
   },1000);
-
