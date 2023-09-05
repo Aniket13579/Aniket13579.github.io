@@ -5,6 +5,6 @@ switch(window.location.pathname.split(".")[0].slice(1)){
         page = "Home"; break;
     case "Blogs":
         page = "Blogs"; break;
-    case "Projects:
+    case "Projects":
         page = "Projects"; break;
 }
